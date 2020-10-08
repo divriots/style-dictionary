@@ -27,7 +27,7 @@
 //
 
 #import "<%= this.className %>.h"
-<% var props = _.filter(allProperties, this.filter); %>
+<% var props = allProperties.filter(this.filter); %>
 
 @implementation <%= this.className %>
 

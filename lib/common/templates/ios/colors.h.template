@@ -27,7 +27,7 @@
 //
 
 #import <UIKit/UIKit.h>
-<% var props = _.filter(allProperties, this.filter); %>
+<% var props = allProperties.filter(this.filter); %>
 
 typedef NS_ENUM(NSInteger, <%= this.type %>) {
 <%= props.map(function(prop) { return prop.name; }).join(',\n') %>

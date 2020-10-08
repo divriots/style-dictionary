@@ -27,8 +27,8 @@
 //
 
 #import "<%= this.className %>.h"
-<%  var props = _.filter(allProperties, this.filter);
+<%  var props = allProperties.filter(this.filter);
     var type = this.type; %>
 
-<% _.each(props, function(prop) {  %>
+<% props.forEach(, function(prop) {  %>
 <%= type %> const <%= prop.name %> = <%= prop.value %>;<% }); %>

@@ -1,0 +1,53 @@
+<script type="module">
+  import StyleDictionary from './dist/index.js'
+
+  const properties = 
+    {
+      "color": {
+        "black": {value:"#000"},
+        "white": "#fff",
+        "modes": {
+          "dark":{
+          "black":"#FFF",
+          "white":"#white"}}
+      }
+    }
+
+  const config = {
+    properties,
+    platforms: {
+      js: {
+        transformGroup: 'js',
+        files: [
+          {
+            destination: "variables.js",
+            format: "javascript/es6"
+          }
+        ]
+      },
+      css: {
+        transformGroup: "css",
+        files: [
+          {
+            destination: "variables.css",
+            format: "css/variables"
+          }
+        ]
+      },
+      scss: {
+        transformGroup: "scss",
+        files: [
+          {
+            destination: "variables.scss",
+            format: "scss/variables"
+          }
+        ]
+      }
+    }
+  }
+
+  export default StyleDictionary
+    .extend(config)
+    .buildAllPlatforms()
+    
+</script>
