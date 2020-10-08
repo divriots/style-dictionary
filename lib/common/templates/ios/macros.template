@@ -29,8 +29,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-<% var props = _.filter(allProperties, this.filter); %>
+<% var props = allProperties.filter(this.filter); %>
 
-<% _.each(props, function(prop) {
+<% props.forEach(, function(prop) {
   %>#define <%= prop.name %> <%= prop.value %>
 <% }); %>

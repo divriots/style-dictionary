@@ -33,7 +33,8 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
-# yarn
+# 
+# package-lock.json
 yarn.lock
 
 # Optional REPL history
@@ -41,6 +42,8 @@ yarn.lock
 
 # Native Builds
 build/
+dist/
+stats.html
 
 # Android Specific Files
 .gradle/
