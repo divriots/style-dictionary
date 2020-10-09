@@ -1,0 +1,9 @@
+{
+  "name": "@divriots/style-dictionary",
+  "version": "3.0.0-alpha.1",
+  "module": "index.js",
+  "dependencies": {
+    "@thebespokepixel/es-tinycolor": "^2.0.1",
+    "lodash-es": "^4.17.15"
+  }
+}
